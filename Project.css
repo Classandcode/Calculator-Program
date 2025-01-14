@@ -1,0 +1,100 @@
+.body1{
+    background-color: rgb(240, 73, 165);
+}
+
+.body2{
+    background-color: rgb(229, 230, 241);
+}
+
+.title{
+    text-align: center;
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    ;
+    text-shadow: 0px 5px 5px rgb(90, 5, 73);
+}
+
+.Result{
+    text-align: center;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    ;
+}
+.container{
+    text-align: center;
+    display: flex;
+    justify-content: space-between ;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.container1{
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+
+}
+
+.inputnum{
+   /* i want to increase the size of the input field */
+   height: 50px;
+   width: 200px;
+   border-radius: 10px;
+   text-align: center;
+   font-size: 20px;
+   font-family: 'Times New Roman', Times, serif;
+   margin-right: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.container2{
+    text-align: center;
+    display: flex;
+    justify-content: center ;
+    margin-top: 20px;
+}
+
+
+.btn{
+    background-color: rgb(253, 115, 173);
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.innercontainer{
+    display: flex;
+}
+
+.colors{
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.fbtn{
+    background-color: rgb(253, 139, 196);
+    color: black;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
