@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- creating an icon for the website -->
+    <link rel="icon" href="heart_logo.png">
+     <!--  link is to append the css file to the website  -->
+    <link rel="stylesheet" href="Project.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This is the title of the website -->
+    <title>Debbie's Calculator</title>
+</head>
+<body class="body1">
+    <div class="container">
+        <div>
+            <!--div is a box holding portions of information that makes it into one entity-->
+            <!-- class is identifying the input and help us to called this input in the css file and style it -->
+            <input class="colors" id="colorback" type="color">
+            <p>BG Color</p>
+        </div>
+       
+        <div class="innercontainer">
+            <img src="calc.png" width="100px">
+            <h1 class="title">Calculator</h1>
+        </div>
+        <div>
+            <input   class="colors" id="colorbtn" type="color">
+            <p>Button Color</p>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <input id="num1" class="inputnum" type="number" placeholder="Enter a number">
+        <input id="num2"  class="inputnum" type="number" placeholder="Enter a number">
+    </div>
+
+
+    <div class="container2">
+        <button id="add" class="btn">Add</button>
+        <button id="sub" class="btn">Subtract</button>
+        <button id="mul" class="btn">Multiply</button>
+        <button id="div" class="btn">Divide</button>
+        <button id="mod" class="btn">Modulus</button>
+    </div>
+
+
+    <h2 id="result" class="title">Result</h2>
+   
+
+
+    <script>
+        // getting all the elements of html using id
+        var num1 = document.getElementById("num1");
+        var num2 = document.getElementById("num2");
+        var add = document.getElementById("add");
+        var sub = document.getElementById("sub");
+        var mul = document.getElementById("mul");
+        var div = document.getElementById("div");
+        var mod = document.getElementById("mod");
+        var result = document.getElementById("result");
+        var color = document.getElementById("colorback");
+        var colorbtn = document.getElementById("colorbtn");
+
+
+        // anytime when event occurs on the website i.e inputting the numbers or clicking the button. This function will automatically run
+        add.addEventListener("click", function(){
+            if (num1.value == "" || num2.value == ""){
+            result.innerHTML = "Please enter a number";
+            }
+            else{
+            result.innerHTML = parseInt(num1.value) + parseInt(num2.value);
+            }
+        })
+
+
+        sub.addEventListener("click", function(){
+            if (num1.value == "" || num2.value == ""){
+            result.innerHTML = "Please enter a number";
+            }
+            else{
+            result.innerHTML = parseInt(num1.value) - parseInt(num2.value);
+        }})  
+
+
+        mul.addEventListener("click", function(){
+            if (num1.value == "" || num2.value == ""){
+            result.innerHTML = "Please enter a number";
+            }
+            else{
+            result.innerHTML = parseInt(num1.value) * parseInt(num2.value);
+        } })
+
+
+        div.addEventListener("click", function(){
+            if (num1.value == "" || num2.value == ""){
+            result.innerHTML = "Please enter a number";
+            }
+            else{
+            result.innerHTML = parseInt(num1.value) / parseInt(num2.value);
+        }})
+
+
+        mod.addEventListener("click", function(){
+            if (num1.value == "" || num2.value == ""){
+            result.innerHTML = "Please enter a number";
+            }
+            else{
+            result.innerHTML = parseInt(num1.value) % parseInt(num2.value);
+        }})
+
+
+        color.addEventListener("input", function(){
+            document.body.style.backgroundColor = color.value;
+        })
+
+
+        colorbtn.addEventListener("input", function(){
+            document.getElementById("add").style.backgroundColor = colorbtn.value;
+            document.getElementById("sub").style.backgroundColor = colorbtn.value;
+            document.getElementById("mul").style.backgroundColor = colorbtn.value;
+            document.getElementById("div").style.backgroundColor = colorbtn.value;
+            document.getElementById("mod").style.backgroundColor = colorbtn.value;
+        })
+
+
+
+
+
+
+    </script>
+</body>
+</html>
+
